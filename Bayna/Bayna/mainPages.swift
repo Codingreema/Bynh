@@ -31,7 +31,10 @@ struct mainPages: View {
                 VStack {
                     
                     ZStack {
-                        NavigationLink(destination: ContentView()) {
+                        
+                        Button(action: {
+                            print("Button tapped!")
+                        }) {
                             Image("button3")
                                 .resizable()
                                 .position(x: 200, y: 95)
